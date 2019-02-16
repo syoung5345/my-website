@@ -6,7 +6,7 @@ import Image from "../components/image";
 import SEO from "../components/seo";
 import Title from "../components/title";
 import Logo from '../components/logo/logo';
-import Card from '../components/card/card';
+import Gallery from '../components/gallery/gallery';
 
 import './index.css';
 
@@ -21,7 +21,7 @@ const IndexPage = () => (
     </div>
     <div id="about"></div>
     <div className="work">
-
+      <Gallery />
     </div>
     <div id="contact"></div>
     
