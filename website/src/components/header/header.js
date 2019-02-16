@@ -10,9 +10,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".navbar").style.left = "0";
+    document.querySelector(".navbar").style.opacity = 1;
   } else {
-    document.querySelector(".navbar").style.left = "-85px";
+    document.querySelector(".navbar").style.opacity = 0;
   }
   prevScrollpos = currentScrollPos;
 } 
