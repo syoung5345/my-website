@@ -1,0 +1,13 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    grid-gap: 1.1rem;
+    padding: 1.5rem;
+}
+
+.nav-item {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
