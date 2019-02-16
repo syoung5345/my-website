@@ -13,6 +13,10 @@ const Gallery = props => (
         <GalleryItem img={Image} />
         <GalleryItem img={Image} />
         <GalleryItem img={Image} />
+        <GalleryItem img={Image} />
+        <GalleryItem img={Image} />
+        <GalleryItem img={Image} />
+        <GalleryItem img={Image} />
     </div>
 )
 
