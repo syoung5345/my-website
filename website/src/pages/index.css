@@ -32,4 +32,5 @@ h6 {
     display: grid;
     align-items: center;
     justify-items: center;
+    padding: 70px;
 }

@@ -5,6 +5,18 @@ import PropTypes from "prop-types";
 import Logo from '../logo/logo';
 import "./header.css";
 
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").style.left = "0";
+  } else {
+    document.querySelector(".navbar").style.left = "-85px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
+
 const Header = ({ siteTitle }) => (
   <nav className="navbar">
     <Link to="/">
