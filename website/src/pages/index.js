@@ -10,6 +10,7 @@ import Card from '../components/card/card';
 
 import './index.css';
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -18,7 +19,11 @@ const IndexPage = () => (
       <Logo width="300" height="300" />
       <Title />
     </div>
-    
+    <div id="about"></div>
+    <div className="work">
+
+    </div>
+    <div id="contact"></div>
     
     {/* <Card name="hello" /> */}
     
@@ -29,4 +34,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default IndexPage;
