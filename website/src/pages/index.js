@@ -6,7 +6,7 @@ import Title from "../components/title";
 import Logo from '../components/logo/logo';
 import Gallery from '../components/gallery/gallery';
 
-import './index.css';
+// import './index.css';
 
 
 const IndexPage = () => (
@@ -21,7 +21,9 @@ const IndexPage = () => (
     <div id="work" className="work">
       <Gallery />
     </div>
-    <div id="contact"></div>
+    <div id="contact">
+    
+    </div>
   </Layout>
 )
 
