@@ -14,4 +14,10 @@
     text-decoration: none;
     color: var(--black);
     font-size: 16px;
+    transition: ease-in-out 0.3s;
+}
+
+.nav-item:hover {
+    /* border-bottom: 2px solid black; */
+    font-size: large;
 }
