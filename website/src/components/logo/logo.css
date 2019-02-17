@@ -1,4 +1,14 @@
 .logo {
     display: grid;
-    /* margin: 1rem; */
+    animation: logo-fade-in 3s linear;
+}
+
+@keyframes logo-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
