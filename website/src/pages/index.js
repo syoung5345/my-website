@@ -2,22 +2,21 @@ import React, { Component } from "react";
 
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
-import Title from "../components/title";
+import Title from "../components/title/title";
 import Logo from '../components/logo/logo';
 import Gallery from '../components/gallery/gallery';
 
-// import './index.css';
-
+import styles from './index.module.css';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-    <div className="header">
+    <div className={styles.header}>
       <Logo width="300" height="300" />
-      <Title />
+      
     </div>
-    <div id="about"></div>
+    <div id="about"><Title /></div>
     <div id="work" className="work">
       <Gallery />
     </div>
