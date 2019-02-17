@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import logo from '../../images/personal_brand_logo_black.svg';
+import logo1 from '../../images/personal_brand_logo_white.svg';
 import './logo.css';
 
 const Logo = ({height, width}) => (

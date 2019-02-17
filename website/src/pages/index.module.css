@@ -3,4 +3,20 @@
     align-items: center;
     justify-items: center;
     padding: 70px;
+    height: 100vh;
 }
+
+.about {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+}
+
+.contact {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+}
+
