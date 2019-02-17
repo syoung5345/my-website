@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import styles from './topArrow.module.css';
 
 const TopArrow = props => (
-    <a href={`/#${props.to}`} className={styles.arrow}></a>
+    <Link to="/" className={styles.arrow}></Link>
 )
 
 export default TopArrow;
