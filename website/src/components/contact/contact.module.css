@@ -1,0 +1,10 @@
+.contact {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.email {
+    font-size: larger;
+    padding: 2rem;
+}
