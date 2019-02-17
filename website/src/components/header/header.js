@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import Logo from '../logo/logo';
 import "./header.css";
 
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;

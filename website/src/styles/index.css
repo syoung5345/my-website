@@ -3,14 +3,8 @@
 }
 
 html {
-  /* border-box box model allows us to add padding and border to our elements without increasing their size */
   box-sizing: border-box;
-  /* A system font stack so things load nice and quick! */
-  font-family: 'Bebas Neue', Roboto, sans-serif;
-  /* font-weight: 100; */
-  /* font-size: 10px; */
-  /* color: var(--black); */
-  /* color: blue; */
+  color: var(--black);
 }
 
 *,
@@ -26,11 +20,4 @@ h4,
 h5,
 h6 {
   margin: 0 0 5px 0;
-}
-
-.header {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    padding: 70px;
 }

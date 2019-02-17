@@ -2,7 +2,6 @@ import React from 'react';
 
 import GalleryItem from './galleryItem/galleryItem';
 
-// import './gallery.css';
 import styles from './gallery.module.css';
 
 import Image from '../../images/5.jpg';
