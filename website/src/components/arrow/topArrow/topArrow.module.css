@@ -1,3 +1,7 @@
+:root {
+    --olive:#3D9970;
+}
+
 .arrow {
     box-sizing: border-box;
     height: 3vw;
@@ -12,4 +16,5 @@
 .arrow:hover {
     border-bottom-width: 4px;
     border-right-width: 4px;
+    border-color: var(--olive);
 }
