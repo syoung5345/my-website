@@ -3,9 +3,9 @@ import React from 'react';
 import styles from './icon.module.css';
 
 const Icon = props => (
-    <div className={styles.icon}>
-        <i className={props.src}></i>
-    </div>
+    <a href={props.href} className={styles.icon}>
+        {props.children}
+    </a>
 )
 
 export default Icon;
