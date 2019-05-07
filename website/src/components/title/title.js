@@ -15,9 +15,9 @@ const Title = () => (
             <Icon href="https://www.linkedin.com/in/samuel-young-383044168/">
                 <FaLinkedin />
             </Icon>
-            <Icon href="https://www.pinterest.com/youngsamuel722/">
+            {/* <Icon href="https://www.pinterest.com/youngsamuel722/">
                 <FaPinterest />
-            </Icon>
+            </Icon> */}
         </div> 
     </div>
 )
