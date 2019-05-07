@@ -34,7 +34,4 @@
 .nav-item:hover:before {
   visibility: visible;
   height: 3px;
-    /* border-bottom: 2px solid black; */
-    /* font-size: large; */
-    /* animation: glow 1s ease-in-out alternate; */
 }
