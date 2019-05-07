@@ -6,5 +6,41 @@
 
 .email {
     font-size: larger;
-    padding: 2rem;
+    padding-top: 2rem;
+    list-style-type: none;
+    text-decoration: none;
+    position: relative;
+}
+
+.email:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--olive);
+    visibility: hidden;
+    transition: ease-in-out 0.3s;
+}
+  
+.email:hover:before {
+    visibility: visible;
+    height: 3px;
+}
+
+.contact > a:link {
+    color: var(--black);
+}
+
+.contact > a:visited {
+    color: gray;
+}
+
+/* .contact > a:hover {
+    color: var(--olive);
+} */
+
+.contact > a:active {
+    color: var(--olive);
 }
