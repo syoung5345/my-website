@@ -10,7 +10,6 @@ import rightView from '../images/zion-right-view.jpg';
 import leftView from '../images/zion-left-view.jpg'
 
 const Work3 = props => (
-    <Layout>
         <div className={styles.work}>
             <Link to="/#work">back</Link>
             <h1>Zion Brochure</h1>
@@ -22,7 +21,6 @@ const Work3 = props => (
             <img src={rightView} alt="right view"/>
             <img src={leftView} alt="left view"/>
         </div>
-    </Layout>
 )
 
 export default Work3;

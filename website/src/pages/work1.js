@@ -9,7 +9,6 @@ import eigerDreams from '../images/book-mockup-eiger-dreams.png';
 import intoTheWild from '../images/book-mockup-into-the-wild.png';
 
 const Work1 = props => (
-    <Layout>
         <div className={styles.work}>
             <Link to="/#work">back</Link>
             <h1>Book Covers</h1>
@@ -20,7 +19,6 @@ const Work1 = props => (
             <img src={intoTheWild} alt="book cover1"/>
             <img src={eigerDreams} alt="book cover2"/>
         </div>
-    </Layout>
 )
 
 export default Work1;

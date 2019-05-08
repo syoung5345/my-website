@@ -8,7 +8,6 @@ import stickers from '../images/Benny-sticker-mockup.png';
 import ads from '../images/Benny-ads.png';
 
 const Work5 = props => (
-    <Layout>
         <div className={styles.work}>
             <Link to="/#work">back</Link>
             <h1>Bike Searcy</h1>
@@ -19,7 +18,6 @@ const Work5 = props => (
             <img src={stickers}  alt="stickers"/>
             <img src={ads}  alt="ads"/>
         </div>
-    </Layout>
 )
 
 export default Work5;

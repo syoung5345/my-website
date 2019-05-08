@@ -8,7 +8,6 @@ import cards from '../images/retro-uno-all.png';
 import box from '../images/uno-box-meals.png';
 
 const Work6 = props => (
-    <Layout>
         <div className={styles.work}>
             <Link to="/#work">back</Link>
             <h1>PSA-Child Hunger</h1>
@@ -19,7 +18,6 @@ const Work6 = props => (
             <img src={box} width="70%" height="70%" alt="box"/>
             <img src={cards}  alt="cards"/>
         </div>
-    </Layout>
 )
 
 export default Work6;

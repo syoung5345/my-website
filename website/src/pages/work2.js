@@ -9,7 +9,6 @@ import explore from '../images/NOLA-explore.png';
 import nightlife from '../images/NOLA-nightlife.png';
 
 const Work2 = props => (
-    <Layout>
         <div className={styles.work}>
             <Link to="/#work">back</Link>
             <h1>Travel Website-NOLA</h1>
@@ -20,7 +19,6 @@ const Work2 = props => (
             <img src={explore} height="80%" width="80%" alt="NOLA explore"/>
             <img src={nightlife} height="80%" width="80%" alt="NOLA Nightlife"/>
         </div>
-    </Layout>
 )
 
 export default Work2;

@@ -9,7 +9,6 @@ import libre from '../images/libre.png';
 import libreDetails from '../images/libre-details.png';
 
 const Work3 = props => (
-    <Layout>
         <div className={styles.work}>
             <Link to="/#work">back</Link>
             <h1>Cotopaxi Website</h1>
@@ -20,7 +19,6 @@ const Work3 = props => (
             <img src={libre}  alt="libre"/>
             <img src={libreDetails}  alt="libre details"/>
         </div>
-    </Layout>
 )
 
 export default Work3;
