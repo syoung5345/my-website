@@ -8,12 +8,12 @@ import bookCovers from '../../images/book-mockup-into-the-air.png';
 import Image2 from '../../images/laptop-NOLA.png';
 import Image3 from '../../images/zion-pro-bono-front.jpg';
 import Image4 from '../../images/home-hero.png';
-import Image5 from '../../images/dm-poster.png';
-import Image6 from '../../images/Benny-ad-1.png';
-import Image7 from '../../images/uno-box-meals.png';
+// import Image5 from '../../images/dm-poster.png';
+import Image5 from '../../images/Benny-ad-1.png';
+import Image6 from '../../images/uno-box-meals.png';
 
 const images = [];
-images.push(bookCovers, Image2, Image3, Image4, Image5, Image6, Image7);
+images.push(bookCovers, Image2, Image3, Image4, Image5, Image6);
 
 let count = 8;
 
