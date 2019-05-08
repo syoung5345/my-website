@@ -5,16 +5,16 @@ import PropTypes from "prop-types";
 import Logo from '../logo/logo';
 import "./header.css";
 
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".navbar").style.opacity = 1;
-  } else {
-    document.querySelector(".navbar").style.opacity = 0;
-  }
-  prevScrollpos = currentScrollPos;
-} 
+// let prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   let currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.querySelector(".navbar").style.opacity = 1;
+//   } else {
+//     document.querySelector(".navbar").style.opacity = 0;
+//   }
+//   prevScrollpos = currentScrollPos;
+// } 
 
 const Header = ({ siteTitle }) => (
   <nav className="navbar">
