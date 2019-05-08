@@ -28,19 +28,3 @@
     visibility: visible;
     height: 3px;
 }
-
-.contact > a:link {
-    color: var(--black);
-}
-
-.contact > a:visited {
-    color: gray;
-}
-
-/* .contact > a:hover {
-    color: var(--olive);
-} */
-
-.contact > a:active {
-    color: var(--olive);
-}
