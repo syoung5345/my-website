@@ -8,7 +8,7 @@ const GalleryItem = props => (
     <Link 
         className={styles.item}
         to={props.to}>
-            <img src={props.img}/>
+            <img src={props.img} className={styles.grow}/>
             <div className={styles.view}>View →</div>
    </Link>
 )

@@ -1,8 +1,15 @@
 .item {
-  /* width: 15%; */
   list-style-type: none;
   text-decoration: none;
   position: relative;
+} 
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
 }
 
 .view {
