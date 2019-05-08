@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 .header {
@@ -24,3 +24,6 @@ html {
     height: 100vh;
 }
 
+.work {
+    font-size: .8rem;
+}
