@@ -15,7 +15,7 @@ const Work3 = props => (
             </div>
             <h1>Cotopaxi Website</h1>
             <p>
-                This redesign was focused on bringing stronger visual impact and more user engagement to interest the viewer right away.
+            This redesign was focused on bringing stronger visual impact and more user engagement to interest the viewer right away.
             </p>
             <img src={home} alt="home"/>
             <img src={libre}  alt="libre"/>

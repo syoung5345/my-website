@@ -16,7 +16,7 @@ const Work3 = props => (
             </div>
             <h1>Zion Brochure</h1>
             <p>
-               This brochure promotes and informs of the outdoor climbing trips that Zion will be hosting in the near future. These trips will allow people to learn “the ropes” of climbing outdoors.
+            This brochure promotes and informs of the outdoor climbing trips that Zion will be hosting in the near future. These trips will allow people to learn “the ropes” of climbing outdoors.
             </p>
             <img src={front} alt="front"/>
             <img src={inside} alt="inside"/>
