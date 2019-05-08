@@ -9,6 +9,7 @@
     scroll-behavior: smooth;
     align-items:center;
     justify-items: center;
+    z-index: 100;
 }
 
 .nav-item {
