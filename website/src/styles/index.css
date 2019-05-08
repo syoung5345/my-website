@@ -23,3 +23,19 @@ h5,
 h6 {
   margin: 0 0 5px 0;
 }
+
+p {
+  color: gray;
+}
+
+a:link {
+  color: gray;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:active {
+  color: var(--olive);
+}
