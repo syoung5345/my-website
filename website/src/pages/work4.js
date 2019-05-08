@@ -10,7 +10,9 @@ import libreDetails from '../images/libre-details.png';
 
 const Work3 = props => (
         <div className={styles.work}>
-            <Link to="/#work">back</Link>
+            <div>
+                <Link to="/#work" className={styles.back}>back</Link>
+            </div>
             <h1>Cotopaxi Website</h1>
             <p>
                 This redesign was focused on bringing stronger visual impact and more user engagement to interest the viewer right away.

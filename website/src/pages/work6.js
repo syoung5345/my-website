@@ -9,7 +9,9 @@ import box from '../images/uno-box-meals.png';
 
 const Work6 = props => (
         <div className={styles.work}>
-            <Link to="/#work">back</Link>
+            <div>
+                <Link to="/#work" className={styles.back}>back</Link>
+            </div>
             <h1>PSA-Child Hunger</h1>
             <p>
                  By showing UNO playing cards that speak to hunger choices, child hunger is portrayed in a light-hearted, but striking way. UNO cards are familiar and have a sense of family. The use of older UNO cards will resonate with the main target audience, people ages 30-50. Uno is thought of as a game for younger kids, but can be played by kids of all ages. In the same way hunger affects kids of all ages. 

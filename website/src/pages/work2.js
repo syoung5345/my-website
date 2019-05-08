@@ -10,7 +10,9 @@ import nightlife from '../images/NOLA-nightlife.png';
 
 const Work2 = props => (
         <div className={styles.work}>
-            <Link to="/#work">back</Link>
+            <div>
+                <Link to="/#work" className={styles.back}>back</Link>
+            </div>
             <h1>Travel Website-NOLA</h1>
             <p>
               This website is a redesign of the New Orleans travel website. I redesigned the tag lines, visuals, and overall brand of the site.

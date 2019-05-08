@@ -9,7 +9,9 @@ import ads from '../images/Benny-ads.png';
 
 const Work5 = props => (
         <div className={styles.work}>
-            <Link to="/#work">back</Link>
+            <div>
+                <Link to="/#work" className={styles.back}>back</Link>
+            </div>
             <h1>Bike Searcy</h1>
             <p>
                  This project was a collaboration. My team consisted of Kaylee Lockenour, Haydin Hall, and Sydney Duckels, and myself. The goal was to create a logo and brand identity, way finding, ads, and event promotions for biking in the city of Searcy, AR. 
