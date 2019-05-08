@@ -10,7 +10,7 @@ const GalleryItem = props => (
         to={props.to}>
             <img src={props.img} className={styles.grow}/>
             {/* <p className={styles.title}>{props.title} →</p> */}
-            <div className={styles.view}>{props.title} </div>
+            <p className={styles.view}>{props.title}</p>
    </Link>
 )
 

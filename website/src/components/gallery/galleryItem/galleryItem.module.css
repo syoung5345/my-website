@@ -37,6 +37,6 @@
 
 .view:hover:before {
   visibility: visible;
-  width: 15%;
+  width: 25%;
   height: 2px;
 }
