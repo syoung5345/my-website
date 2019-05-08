@@ -4,6 +4,11 @@
   position: relative;
 } 
 
+.title {
+  margin: 0;
+  padding: 0;
+}
+
 .grow {
   transition: all .2s ease-in-out;
 }
@@ -13,14 +18,15 @@
 }
 
 .view {
-  width: 15%;
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .view:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 0;
   bottom: 0;
   left: 0;
@@ -31,5 +37,6 @@
 
 .view:hover:before {
   visibility: visible;
+  width: 15%;
   height: 2px;
 }
