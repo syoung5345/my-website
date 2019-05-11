@@ -1,12 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Layout from '../components/layout/layout';
+import Img from 'gatsby-image';
 
 import styles from './index.module.css';
-
-import home from '../images/cotopaxi-home.png';
-import libre from '../images/libre.png';
-import libreDetails from '../images/libre-details.png';
 
 const Work3 = props => (
         <div className={styles.work}>
@@ -17,10 +13,34 @@ const Work3 = props => (
             <p>
             This redesign was focused on bringing stronger visual impact and more user engagement to interest the viewer right away.
             </p>
-            <img src={home} alt="home"/>
-            <img src={libre}  alt="libre"/>
-            <img src={libreDetails}  alt="libre details"/>
+            <Img fluid={props.data.home.childImageSharp.fluid} />
+            <Img fluid={props.data.libre.childImageSharp.fluid} />
+            <Img fluid={props.data.libreDetails.childImageSharp.fluid} />
         </div>
 )
 
 export default Work3;
+
+export const fluidImage4 = graphql `
+fragment fluidImage4 on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+}
+`;
+
+export const work4Query = graphql `
+query {
+    home: file(relativePath: { eq: "cotopaxi-home.png" }) {
+        ...fluidImage4
+    }
+    libre: file(relativePath: { eq: "libre.png" }) {
+        ...fluidImage4
+    }
+    libre-details: file(relativePath: { eq: "libre-details.png" }) {
+        ...fluidImage4
+    }
+}
+`;
