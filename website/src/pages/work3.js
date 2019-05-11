@@ -1,13 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Layout from '../components/layout/layout';
+import Img from 'gatsby-image';
 
 import styles from './index.module.css';
-
-import front from '../images/zion-front.jpg';
-import inside from '../images/zion-inside.jpg';
-import rightView from '../images/zion-right-view.jpg';
-import leftView from '../images/zion-left-view.jpg'
 
 const Work3 = props => (
         <div className={styles.work}>
@@ -18,11 +13,38 @@ const Work3 = props => (
             <p>
             This brochure promotes and informs of the outdoor climbing trips that Zion will be hosting in the near future. These trips will allow people to learn “the ropes” of climbing outdoors.
             </p>
-            <img src={front} alt="front"/>
-            <img src={inside} alt="inside"/>
-            <img src={rightView} alt="right view"/>
-            <img src={leftView} alt="left view"/>
+            <Img fluid={props.data.front.childImageSharp.fluid} />
+            <Img fluid={props.data.inside.childImageSharp.fluid} />
+            <Img fluid={props.data.rightView.childImageSharp.fluid} />
+            <Img fluid={props.data.leftView.childImageSharp.fluid} />
         </div>
 )
 
 export default Work3;
+
+export const fluidImage3 = graphql `
+fragment fluidImage3 on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+}
+`;
+
+export const work3Query = graphql `
+query {
+    front: file(relativePath: { eq: "zion-front.JPG" }) {
+        ...fluidImage3
+    }
+    inside: file(relativePath: { eq: "zion-inside.JPG" }) {
+        ...fluidImage3
+    }
+    rightView: file(relativePath: { eq: "zion-right-view.JPG" }) {
+        ...fluidImage3
+    }
+    leftView: file(relativePath: { eq: "zion-left-view.JPG" }) {
+        ...fluidImage3
+    }
+}
+`;
