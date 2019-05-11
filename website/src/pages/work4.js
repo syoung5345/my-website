@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 
 import styles from './index.module.css';
 
-const Work3 = props => (
+const Work4 = props => (
         <div className={styles.work}>
             <div>
                 <Link to="/#work" className={styles.back}>back</Link>
@@ -19,7 +19,7 @@ const Work3 = props => (
         </div>
 )
 
-export default Work3;
+export default Work4;
 
 export const fluidImage4 = graphql `
 fragment fluidImage4 on File {
@@ -28,8 +28,7 @@ fragment fluidImage4 on File {
         ...GatsbyImageSharpFluid
       }
     }
-}
-`;
+}`;
 
 export const work4Query = graphql `
 query {
@@ -39,8 +38,7 @@ query {
     libre: file(relativePath: { eq: "libre.png" }) {
         ...fluidImage4
     }
-    libre-details: file(relativePath: { eq: "libre-details.png" }) {
+    libreDetails: file(relativePath: { eq: "libre-details.png" }) {
         ...fluidImage4
     }
-}
-`;
+}`;
