@@ -2,7 +2,7 @@ import React from 'react';
 
 import Icon from '../icon/icon';
 import styles from './title.module.css';
-import { FaGithub, FaLinkedin, FaPinterest, FaPi } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Title = () => (
     <div className={styles.title}>
