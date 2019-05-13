@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
@@ -12,9 +12,8 @@ import Contact from '../components/contact/contact';
 import styles from './index.module.css';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout id="home">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-
     <div className={styles.header}>
       <Logo width="200" height="200" />
       <DownArrow to="about"/>
