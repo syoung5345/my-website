@@ -1,25 +1,72 @@
-import React from 'react';
-import { StaticQuery, graphql, Link } from 'gatsby';
+import React, { Component } from 'react';
+import { useStaticQuery, StaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 import GalleryItem from './galleryItem/galleryItem';
 import styles from './gallery.module.css';
 
-import bookCovers from '../../images/book-mockup-into-the-air.png';
-import NOLA from '../../images/laptop-NOLA.png';
-import Zion from '../../images/zion-pro-bono-front.jpg';
-import Cotopaxi from '../../images/home-hero.png';
-import BikeSearcy from '../../images/Benny-ad-1.png';
-import PSA from '../../images/uno-box-meals.png';
+const imgTitles = ['Book Covers', 'Travel Website', 'Zion Brochure', 'Cotopaxi Website','Bike Searcy Branding', 'PSA Child Hunger'];
+const links = ['work1', 'work2', 'work3', 'work4', 'work5', 'work6'];
 
-const images = [{img: bookCovers, title: 'Book Covers'}, {img: NOLA, title: 'Travel Website'}, 
-    {img: Zion, title: 'Zion Brochure'}, {img: Cotopaxi, title: 'Cotopaxi Website'},
-    {img: BikeSearcy, title: 'Bike Searcy Branding'}, {img: PSA, title: 'PSA Child Hunger'}];
+const Gallery = (props) => {
+        // const gallery = pages.map( page => {
+        //         return (
+        //             <div className={styles.item} key={page.title}>
+        //                 <img src={page.img} alt={page.title} />
+        //                 <span className={styles.item__overlay}>
+        //                     >
+        //                 </span>
+        //             </div> 
+        //         );
+        //     });
+        const gallery = props.images.map(img => {
+            return (<Link to={img.link}>
+                <p>{img.title}</p>
+                <Img fluid={img.src} alt={img.title} />
+            </Link>)
+        })
 
-const Gallery = props => (
-    <div>
-        <h1 className={styles.title}>Work</h1>
-            <StaticQuery 
+        return (
+            <div>
+                <h2 className={styles.title}>Work</h2>
+                <div className={styles.gallery}>
+                    {/* {gallery} */}
+                    <Link to={links[0]} className={styles.item}>
+                        <Img fluid={props.src.bookCover.childImageSharp.fluid} alt="book covers"/>
+                    </Link>
+                    <Link to={links[1]} className={styles.item}>
+                        <Img fluid={props.src.nola.childImageSharp.fluid} alt="nola website"/>
+                    </Link>
+                    <Link to={links[2]} className={styles.item}>
+                        <Img fluid={props.src.zion.childImageSharp.fluid} alt="book covers"/>
+                    </Link>
+                    <Link to={links[3]} className={styles.item}>
+                        <Img fluid={props.src.mlb.childImageSharp.fluid} alt="mlb website"/>
+                    </Link>
+                    <Link to={links[4]} className={styles.item}>
+                        <Img fluid={props.src.benny.childImageSharp.fluid} alt="bike searcy"/>
+                    </Link>
+                    <Link to={links[5]} className={styles.item}>
+                        <Img fluid={props.src.uno.childImageSharp.fluid} alt="PSA child hunger"/>
+                    </Link>
+                </div>
+            </div>
+        );
+}
+    // <div>
+    //     <h1 className={styles.title}>Work</h1>
+
+    //         {pages.map(page => {
+    //             return <div 
+    //                         to={page.link}
+    //                         key={page.link}>
+    //                         <Img fluid={page.img} alt={page.title} />
+    //                         {/* <p>{page.title}</p> */}
+    //                 </div>
+                
+    //         })}
+
+            {/* <StaticQuery 
                 query={graphql `
                 query {
                     bookCovers: file(relativePath: { eq: "book-mockup-into-the-air.png" }) {
@@ -105,8 +152,29 @@ const Gallery = props => (
                         </Link>
                     </div>
                 )}
-            />
-    </div>
-)
+            /> */}
+//     </div>
+// )
 
 export default Gallery;
+
+export const fluidImageGallery = graphql `
+fragment fluidImageGallery on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+}
+`;
+
+export const galleryQuery = graphql `
+query {
+    cards: file(relativePath: { eq: "retro-uno-all.png" }) {
+        ...fluidImageGallery
+    }
+    box: file(relativePath: { eq: "uno-box-meals.png" }) {
+        ...fluidImageGallery
+    }
+}
+`;

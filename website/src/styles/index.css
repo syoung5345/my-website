@@ -1,6 +1,12 @@
 :root {
     --black: #272727;
+    --light-olive: #48b585;
     --olive: #3D9970;
+    --dark-olive: #2e7555;
+
+    --light-blue: #7FDBFF;
+    --blue: #007BE6;
+    --dark-blue: #265C83;
 }
 
 html {
@@ -28,7 +34,20 @@ p {
   color: gray;
 }
 
-a:link {
+a {
+  transition: color .4s;
+  color: var(--dark-blue);
+}
+a:link,
+a:visited { color: var(--dark-blue); }
+a:hover   { color: var(--light-blue); }
+a:active  {
+  transition: color .3s;
+  color: var(--blue);
+}
+.link { text-decoration: none; }
+
+/* a:link {
   color: gray;
 }
 
@@ -38,4 +57,4 @@ a:visited {
 
 a:active {
   color: var(--olive);
-}
+} */

@@ -6,9 +6,6 @@ import styles from './index.module.css';
 
 const Work4 = props => (
         <div className={styles.work}>
-            <div>
-                <Link to="/#work" className={styles.back}>back</Link>
-            </div>
             <h1>Cotopaxi Website</h1>
             <p>
             This redesign was focused on bringing stronger visual impact and more user engagement to interest the viewer right away.

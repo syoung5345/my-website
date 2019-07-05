@@ -6,9 +6,6 @@ import styles from './index.module.css';
 
 const Work5 = props => (
         <div className={styles.work}>
-            <div>
-                <Link to="/#work" className={styles.back}>back</Link>
-            </div>
             <h1>Bike Searcy</h1>
             <p>
             This project was a collaboration. My team consisted of Kaylee Lockenour, Haydin Hall, and Sydney Duckels, and myself. The goal was to create a logo and brand identity, way finding, ads, and event promotions for biking in the city of Searcy, AR. 
@@ -31,7 +28,7 @@ fragment fluidImage5 on File {
 }
 `;
 
-export const work4Query = graphql `
+export const work5Query = graphql `
 query {
     stickers: file(relativePath: { eq: "Benny-sticker-mockup.png" }) {
         ...fluidImage5

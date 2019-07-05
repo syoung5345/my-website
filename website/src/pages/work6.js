@@ -6,9 +6,6 @@ import styles from './index.module.css';
 
 const Work6 = props => (
         <div className={styles.work}>
-            <div>
-                <Link to="/#work" className={styles.back}>back</Link>
-            </div>
             <h1>PSA-Child Hunger</h1>
             <p>
             By showing UNO playing cards that speak to hunger choices, child hunger is portrayed in a light-hearted, but striking way. UNO cards are familiar and have a sense of family. The use of older UNO cards will resonate with the main target audience, people ages 30-50. Uno is thought of as a game for younger kids, but can be played by kids of all ages. In the same way hunger affects kids of all ages. The second idea is to have these custom UNO cards printed out really big (1ft. By 2ft.) to show the breadth of the problem. These can be put in grocery stores, nursing homes, restaurants, and shopping areas. Their sheer size and familiarity in an unusual setting will attract attention and cause people to check them out.
@@ -30,7 +27,7 @@ fragment fluidImage6 on File {
 }
 `;
 
-export const work4Query = graphql `
+export const work6Query = graphql `
 query {
     cards: file(relativePath: { eq: "retro-uno-all.png" }) {
         ...fluidImage6

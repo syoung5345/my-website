@@ -6,9 +6,6 @@ import styles from './index.module.css';
 
 const Work1 = props => (
         <div className={styles.work}>
-            <div>
-                <Link to="/#work" className={styles.back}>back</Link>
-            </div>
             <h1>Book Covers</h1>
             <p>
             The concept for these book covers was to combine nature with a man-made item used in each of the books. In all of these books, people are trying to overcome nature in one way or another. These covers are portraying this idea. The different items represent the people in each story. It appears as though the man-made items are overpowering the elements of nature because of their size, or are they? That is the question that the reader has to decide for each story.

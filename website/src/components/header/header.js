@@ -21,9 +21,9 @@ const Header = ({ siteTitle }) => (
     <Link to="/">
       <Logo width="50" height="50" />
     </Link>
-    <Link to="/#about" className="nav-item">About</Link>
-    <Link to="/#work" className="nav-item">Work</Link>
-    <Link to="/#contact" className="nav-item">Contact</Link>
+    <Link to="/#about" className="link">About</Link>
+    <Link to="/#work" className="link">Work</Link>
+    <Link to="/#contact" className="link">Contact</Link>
   </nav>
 )
 
