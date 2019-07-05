@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import styles from './index.module.css';
@@ -19,29 +19,19 @@ const Work3 = props => (
 
 export default Work3;
 
-export const fluidImage3 = graphql `
-fragment fluidImage3 on File {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-}
-`;
-
 export const work3Query = graphql `
 query {
     front: file(relativePath: { eq: "zion-front.JPG" }) {
-        ...fluidImage3
+        ...fluidImage
     }
     inside: file(relativePath: { eq: "zion-inside.JPG" }) {
-        ...fluidImage3
+        ...fluidImage
     }
     rightView: file(relativePath: { eq: "zion-right-view.JPG" }) {
-        ...fluidImage3
+        ...fluidImage
     }
     leftView: file(relativePath: { eq: "zion-left-view.JPG" }) {
-        ...fluidImage3
+        ...fluidImage
     }
 }
 `;
