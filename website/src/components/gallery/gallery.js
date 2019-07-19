@@ -8,25 +8,7 @@ import styles from './gallery.module.css';
 const imgTitles = ['Book Covers', 'Travel Website', 'Zion Brochure', 'Cotopaxi Website','Bike Searcy Branding', 'PSA Child Hunger'];
 const links = ['work1', 'work2', 'work3', 'work4', 'work5', 'work6'];
 
-const Gallery = (props) => {
-        // const gallery = pages.map( page => {
-        //         return (
-        //             <div className={styles.item} key={page.title}>
-        //                 <img src={page.img} alt={page.title} />
-        //                 <span className={styles.item__overlay}>
-        //                     >
-        //                 </span>
-        //             </div> 
-        //         );
-        //     });
-        const gallery = props.images.map(img => {
-            return (<Link to={img.link}>
-                <p>{img.title}</p>
-                <Img fluid={img.src} alt={img.title} />
-            </Link>)
-        })
-
-        return (
+const Gallery = (props) => (
             <div>
                 <h2 className={styles.title}>Work</h2>
                 <div className={styles.gallery}>
@@ -51,8 +33,7 @@ const Gallery = (props) => {
                     </Link>
                 </div>
             </div>
-        );
-}
+)
     // <div>
     //     <h1 className={styles.title}>Work</h1>
 
