@@ -28,6 +28,10 @@
     object-fit: cover;
 }
 
+.item:hover {
+    opacity: .5;
+}
+
 .item:hover .arrow {
     opacity: .5;
     display: block;

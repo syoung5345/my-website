@@ -8,8 +8,7 @@ const Work5 = props => (
         <div className={styles.work}>
             <h1>Bike Searcy</h1>
             <p>
-            This project was a collaboration. My team consisted of Kaylee Lockenour, Haydin Hall, and Sydney Duckels, and myself. The goal was to create a logo and brand identity, way finding, ads, and event promotions for biking in the city of Searcy, AR. 
-            I worked on the logo, way finding, and some of the ads. We brainstormed our ideas together and then divded out the work.
+            This project was a collaboration. My team consisted of Kaylee Lockenour, Haydin Hall, and Sydney Duckels, and myself. The goal was to create a logo and brand identity, way finding, ads, and event promotions for biking in the city of Searcy, AR. I worked on the logo, way finding, and some of the ads. We brainstormed our ideas together and then divded out the work.
             </p>
             <Img fluid={props.data.stickers.childImageSharp.fluid} />
             <Img fluid={props.data.ads.childImageSharp.fluid} />

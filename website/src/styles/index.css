@@ -1,6 +1,6 @@
 :root {
     --black: #272727;
-    --light-olive: #48b585;
+    --light-olive: #63c198;
     --olive: #3D9970;
     --dark-olive: #2e7555;
 
@@ -39,11 +39,11 @@ a {
   color: var(--dark-blue);
 }
 a:link,
-a:visited { color: var(--dark-blue); }
-a:hover   { color: var(--light-blue); }
+a:visited { color: var(--dark-olive); }
+a:hover   { color: var(--light-olive); }
 a:active  {
   transition: color .3s;
-  color: var(--blue);
+  color: var(--olive);
 }
 .link { text-decoration: none; }
 
