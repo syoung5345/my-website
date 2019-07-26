@@ -1,6 +1,5 @@
-//http://squeamish-country.surge.sh/
-
 import React from "react";
+import { graphql } from 'gatsby';
 
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
@@ -13,19 +12,17 @@ import Contact from '../components/contact/contact';
 
 import styles from './index.module.css';
 
-const IndexPage = (props) => {
-  const images = [
-    {title: 'Book Covers', link: 'work1'}, 
-    {title: 'Travel Website', link: 'work2'}, 
-    {title: 'Zion Brochure', link: 'work3'}, 
-    {title: 'Cotopaxi Website', link: 'work4'},
-    {title: 'Bike Searcy Branding', link: 'work5'}, 
-    {title: 'PSA Child Hunger', link: 'work6'}
-  ]
+const images = [
+  {title: 'Book Covers', link: 'work1'}, 
+  {title: 'Travel Website', link: 'work2'}, 
+  {title: 'Zion Brochure', link: 'work3'}, 
+  {title: 'Cotopaxi Website', link: 'work4'},
+  {title: 'Bike Searcy Branding', link: 'work5'}, 
+  {title: 'PSA Child Hunger', link: 'work6'}
+]
 
-
-  return (
-  <Layout id="home">
+const IndexPage = (props) => (
+  <Layout id="home" className={styles.scroll}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className={styles.header}>
       <Logo width="200" height="200" />
@@ -43,7 +40,7 @@ const IndexPage = (props) => {
       <TopArrow />
     </div>
   </Layout>
-)}
+)
 
 export default IndexPage;
 
