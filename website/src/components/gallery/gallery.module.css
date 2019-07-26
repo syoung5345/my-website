@@ -18,6 +18,7 @@
     display: grid;
     /* background-color: salmon; */
     padding: 1rem;
+    transition: .1s ease-out;
 }
 
 .item img {
@@ -29,7 +30,7 @@
 }
 
 .item:hover {
-    opacity: .5;
+    transform: scale(1.1);
 }
 
 .item:hover .arrow {

@@ -30,7 +30,9 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer className="footer">
-            © {new Date().getFullYear()} Samuel Young
+            <span>
+              made with <span style={{color: 'red'}}>❤</span> by Samuel Young 
+            </span>
           </footer>
         </div>
       </>
