@@ -21,16 +21,16 @@ export default Work3;
 
 export const work3Query = graphql `
 query {
-    front: file(relativePath: { eq: "zion-front.JPG" }) {
+    front: file(relativePath: { eq: "zion-front.jpg" }) {
         ...fluidImage
     }
-    inside: file(relativePath: { eq: "zion-inside.JPG" }) {
+    inside: file(relativePath: { eq: "zion-inside.jpg" }) {
         ...fluidImage
     }
-    rightView: file(relativePath: { eq: "zion-right-view.JPG" }) {
+    rightView: file(relativePath: { eq: "zion-right-view.jpg" }) {
         ...fluidImage
     }
-    leftView: file(relativePath: { eq: "zion-left-view.JPG" }) {
+    leftView: file(relativePath: { eq: "zion-left-view.jpg" }) {
         ...fluidImage
     }
 }
