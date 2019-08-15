@@ -1,8 +1,7 @@
 .navbar {
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-auto-flow: column; */
-    grid-gap: 1.1rem;
+    grid-gap: .5em;
     padding: 1.5rem;
     position: fixed;
     transition: all .3s;
@@ -16,7 +15,6 @@
     list-style-type: none;
     text-decoration: none;
     color: var(--black);
-    font-size: 16px;
     position: relative;
 }
 

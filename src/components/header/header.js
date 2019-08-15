@@ -24,9 +24,9 @@ import "./header.css";
 
 const Header = ({ siteTitle }) => (
   <nav className="navbar">
-    <Link to="/">
+    {/* <Link to="/">
       <Logo width="50" height="50" />
-    </Link>
+    </Link> */}
     <Link to="/#about" className="link">About</Link>
     <Link to="/#work" className="link">Work</Link>
     <Link to="/#contact" className="link">Contact</Link>
