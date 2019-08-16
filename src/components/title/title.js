@@ -9,10 +9,10 @@ const Title = () => (
         <h1>Samuel Young</h1>
         <p>Developer | Designer | Adventurer</p>   
         <div className={styles.icons}>
-            <Icon href="https://github.com/syoung5345">
+            <Icon href="https://github.com/syoung5345" target="_blank">
                 <FaGithub />
             </Icon>
-            <Icon href="https://www.linkedin.com/in/samuel-young-383044168/">
+            <Icon href="https://www.linkedin.com/in/samuel-young-383044168/" target="_blank">
                 <FaLinkedin />
             </Icon>
         </div> 
