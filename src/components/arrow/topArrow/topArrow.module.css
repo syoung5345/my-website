@@ -3,14 +3,19 @@
 }
 
 .arrow {
+    z-index: 99;
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
     box-sizing: border-box;
-    height: 3vw;
-    width: 3vw;
+    height: 1.2rem;
+    width: 1.2rem;
     border-style: solid;
-    border-color: black;
+    border-color: var(--gray);
     border-width: 0px 1px 1px 0px;
     transform: rotate(225deg);
     transition: border-width 150ms ease-in-out;
+    opacity: 0;
 }
 
 .arrow:hover {

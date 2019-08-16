@@ -1,3 +1,7 @@
+section {
+    margin-top: 3rem;
+}
+
 .scroll {
     scroll-behavior: smooth;
 }
@@ -14,24 +18,16 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    height: 100vh;
 }
 
 .contact {
     display: grid;
     align-items: center;
     justify-items: center;
-    height: 100vh;
-}
-
-.work {
-    font-size: .8rem;
-    padding: 2rem;
 }
 
 .back {
     padding-top: 1rem;
-    text-decoration: none;
     position: relative;
 }
 

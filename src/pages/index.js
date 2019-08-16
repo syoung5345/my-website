@@ -26,21 +26,21 @@ const images = [
 const IndexPage = (props) => (
   <Layout id="home" className={styles.scroll}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className={styles.header}>
+    <section className={styles.header} style={{'marginTop': 0}}>
       <Logo width="200" height="200" />
-      <DownArrow to="about"/>
-    </div>
-    <div id="about" className={styles.about}>
+      {/* <DownArrow to="about"/> */}
+    </section>
+    <section id="about" className={styles.about}>
       <Title />
-      <DownArrow to="work"/>
-    </div>
-    <div id="work">
+      {/* <DownArrow to="work"/> */}
+    </section>
+    <section id="work">
       <Gallery images={images} src={props.data} />
-    </div>
-    <div id="contact" className={styles.contact}>
+    </section>
+    <section id="contact" className={styles.contact}>
       <Contact />
-      <TopArrow />
-    </div>
+    </section>
+    <TopArrow />
   </Layout>
 )
 

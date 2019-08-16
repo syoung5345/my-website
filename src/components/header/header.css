@@ -1,14 +1,14 @@
 .navbar {
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: .5em;
     padding: 1.5rem;
-    position: fixed;
-    transition: all .3s;
-    scroll-behavior: smooth;
-    align-items:center;
+    align-items: center;
     justify-items: center;
     z-index: 100;
+    left: 1.5em;
+    transition: all .3s;
 }
 
 .nav-item {
@@ -18,7 +18,7 @@
     position: relative;
 }
 
-.nav-item:before {
+/* .nav-item:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -33,4 +33,8 @@
 .nav-item:hover:before {
   visibility: visible;
   height: 3px;
+} */
+
+.navbar--hidden {
+  left: -5rem;
 }

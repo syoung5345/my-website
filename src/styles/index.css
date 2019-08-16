@@ -1,18 +1,23 @@
 :root {
-    --black: #272727;
-    --light-olive: #63c198;
-    --olive: #3D9970;
-    --dark-olive: #2e7555;
+  --light-gray: #dddddd;
+  --gray: #707070;
+  --dark-gray: 		#484848;
+  --black: #333333;
 
-    --light-blue: #7FDBFF;
-    --blue: #007BE6;
-    --dark-blue: #265C83;
+  --light-olive: #63c198;
+  --olive: #3D9970;
+  --dark-olive: #2e7555;
+
+  --light-blue: #7FDBFF;
+  --blue: #007BE6;
+  --dark-blue: #265C83;
 }
 
 html {
   box-sizing: border-box;
   color: var(--black);
   background: white;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -31,19 +36,19 @@ h6 {
 }
 
 p {
-  color: gray;
+  color: var(--gray);
 }
 
 a {
   transition: color .4s;
-  color: var(--dark-blue);
+  color: var(--gray);
 }
 a:link,
-a:visited { color: var(--dark-olive); }
-a:hover   { color: var(--light-olive); }
+a:visited { color: var(--dark-gray); }
+a:hover   { color: var(--light-gray); }
 a:active  {
   transition: color .3s;
-  color: var(--olive);
+  color: var(--light-gray);
 }
 .link { text-decoration: none; }
 
