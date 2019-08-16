@@ -20,6 +20,11 @@ section {
     justify-items: center;
 }
 
+.work {
+    font-size: .8rem;
+    padding: 3em;
+}
+
 .contact {
     display: grid;
     align-items: center;

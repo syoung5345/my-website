@@ -16,27 +16,27 @@ class Header extends Component {
   }
 
   // Adds an event listener when the component is mount.
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
+  // componentDidMount() {
+  //   window.addEventListener("scroll", this.handleScroll);
+  // }
 
-  // Remove the event listener when the component is unmount.
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
+  // // Remove the event listener when the component is unmount.
+  // componentWillUnmount() {
+  //   window.removeEventListener("scroll", this.handleScroll);
+  // }
 
   // Hide or show the menu.
-  handleScroll = () => {
-    const { prevScrollpos } = this.state;
+  // handleScroll = () => {
+  //   const { prevScrollpos } = this.state;
 
-    const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollpos > currentScrollPos;
+  //   const currentScrollPos = window.pageYOffset;
+  //   const visible = prevScrollpos > currentScrollPos;
 
-    this.setState({
-      prevScrollpos: currentScrollPos,
-      visible
-    });
-  };
+  //   this.setState({
+  //     prevScrollpos: currentScrollPos,
+  //     visible
+  //   });
+  // };
 
   // componentDidMount() {
   //   //this.prevScrollpos = window.pageYOffset;
