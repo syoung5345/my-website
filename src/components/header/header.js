@@ -15,13 +15,13 @@ class Header extends Component {
     };
   }
 
-  //Adds an event listener when the component is mount.
+  //Adds an event listener when the component is mounted
   componentDidMount() {
     this.setState({prevScrollpos: window.pageXOffset});
     window.addEventListener("scroll", this.handleScroll);
   }
 
-  // Remove the event listener when the component is unmount.
+  // Remove the event listener when the component is unmounted
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
   }
@@ -41,21 +41,14 @@ class Header extends Component {
 
   render() {
     return (
-      <nav className={`navbar ${this.state.visible ? '' : 'navbar--hidden'}`}>
-        <Link to="/#about" className="link">About</Link>
-        <Link to="/#work" className="link">Work</Link>
-        <Link to="/#contact" className="link">Contact</Link>
+      <nav className={`navbar ${this.state.visible ? '' : 'navbar--hidden'} wrapper`}>
+        <Link to="/#about" className={`link-underline link`}>About</Link>
+        <Link to="/#work" className={`link-underline link`}>Work</Link>
+        <Link to="/#contact" className={`link-underline link`}>Contact</Link>
       </nav>
     )
   }
 }
-
-// const Header = ({ siteTitle }) => (
-//   <nav className="navbar">
-//     <Link to="/#work" className="link">Work</Link>
-//     <Link to="/#contact" className="link">Contact</Link>
-//   </nav>
-// )
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

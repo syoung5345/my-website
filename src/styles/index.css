@@ -1,7 +1,7 @@
 :root {
   --light-gray: #dddddd;
   --gray: #707070;
-  --dark-gray: 		#484848;
+  --dark-gray: #484848;
   --black: #333333;
 
   --light-olive: #63c198;
@@ -17,7 +17,7 @@ html {
   box-sizing: border-box;
   color: var(--black);
   background: white;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 *,
@@ -39,7 +39,44 @@ p {
   color: var(--gray);
 }
 
-a {
+.link-underline,
+.link-underline:visited,
+.link-underline:hover,.link-underline:active {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+	position: relative;
+  transition: 0.5s color ease;
+	text-decoration: none;
+	color: var(--gray);
+	font-size: 1em;
+}
+
+.link-underline:before, 
+.link-underline:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+}
+
+.link-underline:after {
+  bottom: -0.25em;
+}
+
+.link-underline:after {
+  height: 1px;
+  height: 0.15rem;
+  width: 0;
+  left: 0;
+  background: var(--olive);
+}
+
+.link-underline:hover:after {
+  width:100%;
+}
+
+/* a {
   transition: color .4s;
   color: var(--gray);
 }
@@ -50,7 +87,7 @@ a:active  {
   transition: color .3s;
   color: var(--light-gray);
 }
-.link { text-decoration: none; }
+.link { text-decoration: none; } */
 
 /* a:link {
   color: gray;

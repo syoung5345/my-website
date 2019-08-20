@@ -5,7 +5,7 @@ import styles from './contact.module.css';
 const Contact = () => (
     <p className={styles.contact}>
         Get in touch
-        <a href="mailto:syoung5@harding.edu" className="link">Contact me</a> 
+        <a href="mailto:syoung5@harding.edu" className={`link link-underline`}>Contact me</a> 
     </p>
 )
 
