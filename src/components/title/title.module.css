@@ -4,6 +4,15 @@
     justify-items: center;
 }
 
+.title h1 {
+    font-weight: 600;
+    color: var(--brown);
+}
+
+.title p {
+    color: var(--gray);
+}
+
 .icons {
     display: grid;
     grid-gap: 2rem;

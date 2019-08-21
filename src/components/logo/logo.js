@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import logo from '../../images/personal_brand_logo_black.svg';
+import logo from '../../images/logo-gray.svg';
 import './logo.css';
 
 const Logo = ({height, width}) => (
     <img 
         src={logo} 
         alt="logo" 
-        height={height} 
-        width={width} 
+        height="150em"
+        width="150em"
         className="logo" />
 );
 

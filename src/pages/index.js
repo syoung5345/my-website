@@ -28,12 +28,11 @@ const IndexPage = (props) => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <section className={styles.header} style={{'marginTop': 0}}>
       <Logo width="200" height="200" />
-      {/* <DownArrow to="about"/> */}
-    </section>
-    <section id="about" className={styles.about}>
       <Title />
-      {/* <DownArrow to="work"/> */}
     </section>
+    {/* <section id="about" className={styles.about}>
+      <Title />
+    </section> */}
     <section id="work">
       <Gallery images={images} src={props.data} />
     </section>

@@ -8,10 +8,11 @@ section {
 
 .header {
     display: grid;
-    align-items: center;
+    /* align-items: center; */
+    margin-top: 5em;
     justify-items: center;
-    padding: 70px;
-    height: 100vh;
+    padding: 7em;
+    /* height: 100vh; */
 }
 
 .about {

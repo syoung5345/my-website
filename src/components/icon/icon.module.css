@@ -1,12 +1,8 @@
-:root {
-    --olive: #3D9970;
-}
-
 .icon {
     font-size: 1.8rem;
-    color: black;
+    color: var(--gray-dark);
 }
 
 .icon:hover {
-    color: var(--olive);
+    color: var(--brown);
 }

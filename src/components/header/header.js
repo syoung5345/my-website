@@ -42,7 +42,7 @@ class Header extends Component {
   render() {
     return (
       <nav className={`navbar ${this.state.visible ? '' : 'navbar--hidden'} wrapper`}>
-        <Link to="/#about" className={`link-underline link`}>About</Link>
+        <Link to="#" className={`link-underline link`}>Home</Link>
         <Link to="/#work" className={`link-underline link`}>Work</Link>
         <Link to="/#contact" className={`link-underline link`}>Contact</Link>
       </nav>

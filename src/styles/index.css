@@ -1,8 +1,11 @@
 :root {
   --light-gray: #dddddd;
   --gray: #707070;
-  --dark-gray: #484848;
+  --gray-dark: #605D5C;
+  --gray-darker: #484848;
   --black: #333333;
+
+  --brown: #BF8162;
 
   --light-olive: #63c198;
   --olive: #3D9970;
@@ -13,10 +16,14 @@
   --dark-blue: #265C83;
 }
 
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 html {
   box-sizing: border-box;
-  color: var(--black);
-  background: white;
+  color: var(--gray-darker);
+  background: whitesmoke;
   scroll-behavior: auto;
 }
 
@@ -33,6 +40,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 5px 0;
+  color: var(--gray);
 }
 
 p {
@@ -48,7 +56,8 @@ p {
   transition: 0.5s color ease;
 	text-decoration: none;
 	color: var(--gray);
-	font-size: 1em;
+  font-size: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .link-underline:before, 
@@ -69,7 +78,7 @@ p {
   height: 0.15rem;
   width: 0;
   left: 0;
-  background: var(--olive);
+  background: var(--brown);
 }
 
 .link-underline:hover:after {
