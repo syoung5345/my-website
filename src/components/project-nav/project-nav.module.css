@@ -1,0 +1,8 @@
+.navItem {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.next {
+    float: right;
+}

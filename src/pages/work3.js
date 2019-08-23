@@ -2,19 +2,20 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import styles from './index.module.css';
+import Work from '../components/work/work';
 
 const Work3 = props => (
-        <div className={styles.work}>
-            <h1>Zion Brochure</h1>
-            <p>
-            This brochure promotes and informs of the outdoor climbing trips that Zion will be hosting in the near future. These trips will allow people to learn “the ropes” of climbing outdoors.
-            </p>
-            <Img fluid={props.data.front.childImageSharp.fluid} />
-            <Img fluid={props.data.inside.childImageSharp.fluid} />
-            <Img fluid={props.data.rightView.childImageSharp.fluid} />
-            <Img fluid={props.data.leftView.childImageSharp.fluid} />
-        </div>
+    <Work 
+        title="Zion Brochure"
+        description="This brochure promotes and informs of the outdoor climbing trips that Zion will be hosting in the near future. These trips will allow people to learn “the ropes” of climbing outdoors."
+        prev="work2"
+        next="work4"
+    >
+        <Img fluid={props.data.front.childImageSharp.fluid} />
+        <Img fluid={props.data.inside.childImageSharp.fluid} />
+        <Img fluid={props.data.rightView.childImageSharp.fluid} />
+        <Img fluid={props.data.leftView.childImageSharp.fluid} />
+    </Work>
 )
 
 export default Work3;

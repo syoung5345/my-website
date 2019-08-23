@@ -19,7 +19,7 @@ const Gallery = (props) => (
                         <Img fluid={props.src.nola.childImageSharp.fluid} alt="nola website"/>
                     </Link>
                     <Link to={links[2]} className={styles.item}>
-                        <Img fluid={props.src.zion.childImageSharp.fluid} alt="book covers"/>
+                        <Img fluid={props.src.zion.childImageSharp.fluid} alt="zion brochure"/>
                     </Link>
                     <Link to={links[3]} className={styles.item}>
                         <Img fluid={props.src.mlb.childImageSharp.fluid} alt="mlb website"/>

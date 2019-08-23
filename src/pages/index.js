@@ -1,5 +1,3 @@
-//https://musing-shaw-bea94e.netlify.com
-
 import React from "react";
 import { graphql } from 'gatsby';
 
@@ -8,33 +6,34 @@ import SEO from "../components/seo";
 import Title from "../components/title/title";
 import Logo from '../components/logo/logo';
 import Gallery from '../components/gallery/gallery';
-import DownArrow from '../components/arrow/downArrow/downArrow';
 import TopArrow from '../components/arrow/topArrow/topArrow';
 import Contact from '../components/contact/contact';
 
 import styles from './index.module.css';
 
-const images = [
-  {title: 'Book Covers', link: 'work1'}, 
-  {title: 'Travel Website', link: 'work2'}, 
-  {title: 'Zion Brochure', link: 'work3'}, 
-  {title: 'Cotopaxi Website', link: 'work4'},
-  {title: 'Bike Searcy Branding', link: 'work5'}, 
-  {title: 'PSA Child Hunger', link: 'work6'}
-]
-
 const IndexPage = (props) => (
   <Layout id="home" className={styles.scroll}>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO 
+      title="Home" 
+      keywords={[
+        `gatsby`, 
+        `application`, 
+        `react`, 
+        `Samuel Young`, 
+        `Developer`,
+        'Designer',
+        'Adventurer',
+        'Graphic Design',
+        'Portfolio',
+        'Web Design',
+        'Web Development'
+      ]} />
     <section className={styles.header} style={{'marginTop': 0}}>
       <Logo width="200" height="200" />
       <Title />
     </section>
-    {/* <section id="about" className={styles.about}>
-      <Title />
-    </section> */}
     <section id="work">
-      <Gallery images={images} src={props.data} />
+      <Gallery src={props.data} />
     </section>
     <section id="contact" className={styles.contact}>
       <Contact />

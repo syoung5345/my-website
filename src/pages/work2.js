@@ -2,18 +2,19 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import styles from './index.module.css';
+import Work from '../components/work/work';
 
 const Work2 = props => (
-        <div className={styles.work}>
-            <h1>Travel Website-NOLA</h1>
-            <p>
-            This website is a redesign of the New Orleans travel website. I redesigned the tag lines, visuals, and overall brand of the site.
-            </p>
-            <Img fluid={props.data.home.childImageSharp.fluid} />
-            <Img fluid={props.data.explore.childImageSharp.fluid} />
-            <Img fluid={props.data.nightlife.childImageSharp.fluid} />
-        </div>
+    <Work 
+        title="New Orleans Travel Website"
+        description="This website is a redesign of the New Orleans travel website. I redesigned the tag lines, visuals, and overall brand of the site."
+        prev="work1"
+        next="work3"
+    >
+        <Img fluid={props.data.home.childImageSharp.fluid} />
+        <Img fluid={props.data.explore.childImageSharp.fluid} />
+        <Img fluid={props.data.nightlife.childImageSharp.fluid} />
+    </Work>
 )
 
 export default Work2;
