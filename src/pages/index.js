@@ -1,3 +1,12 @@
+//1. back button goes to home on pages 
+//2. programatically create pages from data
+//3. update card styles
+//4. update contact styling
+//5. remove white background from pictures
+//6. add layout for pages 
+//7. captions for images/more explanation about project
+//8. make card grid have no horizontal scroll on mobile
+
 import React from "react";
 import { graphql } from 'gatsby';
 
@@ -7,12 +16,13 @@ import Title from "../components/title/title";
 import Logo from '../components/logo/logo';
 import Gallery from '../components/gallery/gallery';
 import TopArrow from '../components/arrow/topArrow/topArrow';
+import DownArrow from '../components/arrow/downArrow/downArrow';
 import Contact from '../components/contact/contact';
 
 import styles from './index.module.css';
 
 const IndexPage = (props) => (
-  <Layout id="home" className={styles.scroll}>
+  <Layout id="home">
     <SEO 
       title="Home" 
       keywords={[
@@ -31,6 +41,7 @@ const IndexPage = (props) => (
     <section className={styles.header} style={{'marginTop': 0}}>
       <Logo width="200" height="200" />
       <Title />
+      <DownArrow to="work" />
     </section>
     <section id="work">
       <Gallery src={props.data} />

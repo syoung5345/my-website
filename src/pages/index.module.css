@@ -2,10 +2,6 @@ section {
     margin-top: 3rem;
 }
 
-.scroll {
-    scroll-behavior: smooth;
-}
-
 .header {
     display: grid;
     /* align-items: center; */
