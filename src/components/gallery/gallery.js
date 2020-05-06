@@ -4,6 +4,8 @@ import Img from 'gatsby-image';
 
 //import GalleryItem from './galleryItem/galleryItem';
 import styles from './gallery.module.css';
+// import styles from './flexGallery.module.css';
+// import './card.css';
 
 //const imgTitles = ['Book Covers', 'Travel Website', 'Zion Brochure', 'Cotopaxi Website','Bike Searcy Branding', 'PSA Child Hunger'];
 const links = ['bookcovers', 'work2', 'work3', 'work4', 'work5', 'work6', 'annualreport', 'skilltrax'];
@@ -11,12 +13,20 @@ const links = ['bookcovers', 'work2', 'work3', 'work4', 'work5', 'work6', 'annua
 const Gallery = (props) => (
             <div>
                 <h2 className={styles.title}>Work</h2>
+
                 <div className={styles.gallery}>
-                    {/* { props.works.map(work => 
-                        <Link to={work.to} className={styles.item}>
-                            <img fluid={work.img} alt={work.alt} />
-                        </Link>
-                    )} */}
+
+                    {/* <div className={styles.card}>
+                        <div className={styles.header}>
+                            <Link to={links[7]}>
+                                <Img fluid={props.img.skilltrax.childImageSharp.fluid} alt="SkillTrax website"/>
+                            </Link>
+                        </div>
+                        <div className={styles.header}>
+                            Title of Project
+                        </div>
+                    </div> */}
+
                     <Link to={links[7]} className={styles.item}>
                         <Img fluid={props.img.skilltrax.childImageSharp.fluid} alt="SkillTrax website"/>
                     </Link>

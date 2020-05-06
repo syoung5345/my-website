@@ -8,7 +8,7 @@ import styles from './index.module.css';
 
 const AnnualReport = props => (
     <Work 
-        title="Nike Annual Report"
+        title="Nike Annual Report and Poster Series"
         goal="The goal of this project was to learn about a company and execute a series of projects for that company. I picked Nike because I wanted to learn more about it and felt it would challenge me."
         deliverables={["Annual Report bound book", "Corporate Social Responsibility(CSR) poster series", "Interactive version of the annual report"]}
         outcome="I learned much about Nike and their style. In addition, I implemented an annual report, a CSR poster series, and an interactive version of the annual report."
@@ -29,6 +29,26 @@ const AnnualReport = props => (
             <Img  fluid={props.data.ar3.childImageSharp.fluid} />
             <Img  fluid={props.data.ar4.childImageSharp.fluid} />
             <Img  fluid={props.data.ar5.childImageSharp.fluid} />
+        </section>
+        <section>
+            <div className={styles.description}>
+                <h1>Coporate Social Responsibility poster series</h1>
+                <p>First concepts and designs</p>
+            </div>
+            <div className={styles.img}>
+                <Img  fluid={props.data.csr1.childImageSharp.fluid} />
+                <Img  fluid={props.data.csr2.childImageSharp.fluid} />
+                <Img  fluid={props.data.csr3.childImageSharp.fluid} />
+                <Img  fluid={props.data.csr4.childImageSharp.fluid} />
+                <Img  fluid={props.data.csr5.childImageSharp.fluid} />
+            </div>
+
+            <div className={styles.description} style={{ 'marginTop': '3em'}}>
+                <h1>Final poster series</h1>
+            </div>
+            <Img  fluid={props.data.csrPoster1.childImageSharp.fluid} />
+            <Img  fluid={props.data.csrPoster2.childImageSharp.fluid} />
+            <Img  fluid={props.data.csrPoster3.childImageSharp.fluid} />
         </section>
     </Work>
 )
@@ -63,6 +83,32 @@ query {
         ...fluidImage
     }
     ar5: file(relativePath: { eq: "ar-bs.jpg" }) {
+        ...fluidImage
+    }
+
+    csr1: file(relativePath: { eq: "csr-process-1.png" }) {
+        ...fluidImage
+    }
+    csr2: file(relativePath: { eq: "csr-process-2.png" }) {
+        ...fluidImage
+    }
+    csr3: file(relativePath: { eq: "csr-process-3.jpg" }) {
+        ...fluidImage
+    }
+    csr4: file(relativePath: { eq: "csr-process-4.png" }) {
+        ...fluidImage
+    }
+    csr5: file(relativePath: { eq: "csr-process-5.png" }) {
+        ...fluidImage
+    }
+
+    csrPoster1: file(relativePath: { eq: "csr-1.png" }) {
+        ...fluidImage
+    }
+    csrPoster2: file(relativePath: { eq: "csr-2.png" }) {
+        ...fluidImage
+    }
+    csrPoster3: file(relativePath: { eq: "csr-3.png" }) {
         ...fluidImage
     }
 }
