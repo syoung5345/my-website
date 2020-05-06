@@ -76,7 +76,10 @@ query {
     uno: file(relativePath: { eq: "uno-box-meals.png" }) {
       ...fluidImages
     }
-    ar: file(relativePath: { eq: "ar-mockup-1.jpg" }) {
+    ar: file(relativePath: { eq: "ar-runner.png" }) {
+      ...fluidImages
+    }
+    skilltrax: file(relativePath: { eq: "skilltrax-1.png" }) {
       ...fluidImages
     }
 }

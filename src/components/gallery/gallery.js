@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 import styles from './gallery.module.css';
 
 //const imgTitles = ['Book Covers', 'Travel Website', 'Zion Brochure', 'Cotopaxi Website','Bike Searcy Branding', 'PSA Child Hunger'];
-const links = ['work1', 'work2', 'work3', 'work4', 'work5', 'work6', 'ar'];
+const links = ['work1', 'work2', 'work3', 'work4', 'work5', 'work6', 'annualreport', 'skilltrax'];
 
 const Gallery = (props) => (
             <div>
@@ -17,6 +17,9 @@ const Gallery = (props) => (
                             <img fluid={work.img} alt={work.alt} />
                         </Link>
                     )} */}
+                    <Link to={links[7]} className={styles.item}>
+                        <Img fluid={props.img.skilltrax.childImageSharp.fluid} alt="SkillTrax website"/>
+                    </Link>
                     <Link to={links[6]} className={styles.item}>
                         <Img fluid={props.img.ar.childImageSharp.fluid} alt="annual report"/>
                     </Link>

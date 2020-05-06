@@ -1,25 +1,21 @@
-import React from 'react'
-import Img from 'gatsby-image';
+import React from 'react';
 
 import styles from './work.module.css';
+import ProjectNav from '../project-nav/project-nav';
 
-const work1 = props => (
-    <section className={styles.wrapper}>
-        <header className={styles.header}>My header</header>
-        
-        {/* <div className="panel">Panel A</div>
-        <div className="panel">Panel B</div>
-        <div className="panel tall-panel">Panel C</div>
-        <div className="panel">Panel D</div> */}
-        <div className={styles.panel}>Panel E</div>
-        <div className={styles.panel}>Panel F</div>
-        {/* <div className={`styles.panel styles.tall-panel`}>Panel G</div>
-        <div className={`styles.panel styles.tall-panel`}>Panel H</div> */}
-        <div className={styles.panel}>Panel I</div>
-        <div className={styles.panel}>Panel J</div>
-        
-        <footer className={styles.footer}>My footer</footer>
-    </section>
+const Work1 = props => (
+    <div className={styles.work}>
+        <div className={styles.title}>
+            <h1>{props.title}</h1> 
+            <p>{props.date}</p>
+            <p><strong>Goal:</strong> {props.goal}</p>
+            <p><strong>Services:</strong> {props.services}</p>
+            <p><strong>Outcome:</strong> {props.outcome}</p>
+            <p><strong>Impact:</strong> {props.impact}</p>
+        </div>
+            {props.children}
+        <ProjectNav prev={props.prev} next={props.next} />
+    </div>
 )
 
-export default work1;
+export default Work1;

@@ -3,12 +3,8 @@
     padding: 5em;
 }
 
-.title {
-    /* padding: 3rem; */
-}
-
-.projectNav {
-    /* padding: 3rem; */
+.work h1 {
+  margin-bottom: 0;
 }
 
 .wrapper {
