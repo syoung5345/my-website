@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Work from '../components/work/work';
+import work1 from '../components/work/work1'
 import styles from './index.module.css';
 
 const Work1 = props => (
@@ -12,11 +13,13 @@ const Work1 = props => (
         prev="work6"
         next="work2"
     >
-        <div className={styles.images}>
-            <Img fluid={props.data.Book1.childImageSharp.fluid} />
-            <Img fluid={props.data.Book2.childImageSharp.fluid} />
-            <Img fluid={props.data.Book3.childImageSharp.fluid} />
-        </div>
+        {/* <work1 /> */}
+        <section className={styles.container}>
+            <Img className={styles.big} fluid={props.data.Book1.childImageSharp.fluid} />
+            <Img className={styles.small} fluid={props.data.Book2.childImageSharp.fluid} />
+            <Img className={styles.span2} fluid={props.data.Book2.childImageSharp.fluid} />
+            <Img className={styles.long} fluid={props.data.Book3.childImageSharp.fluid} />
+        </section>
     </Work>
 )
 
