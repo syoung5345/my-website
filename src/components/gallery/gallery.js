@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 import styles from './gallery.module.css';
 
 //const imgTitles = ['Book Covers', 'Travel Website', 'Zion Brochure', 'Cotopaxi Website','Bike Searcy Branding', 'PSA Child Hunger'];
-const links = ['work1', 'work2', 'work3', 'work4', 'work5', 'work6', 'annualreport', 'skilltrax'];
+const links = ['bookcovers', 'work2', 'work3', 'work4', 'work5', 'work6', 'annualreport', 'skilltrax'];
 
 const Gallery = (props) => (
             <div>

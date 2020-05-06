@@ -9,15 +9,16 @@ import styles from './index.module.css';
 const AnnualReport = props => (
     <Work 
         title="Nike Annual Report"
-        description="The concept for these book covers was to combine nature with a man-made item used in each of the books. In all of these books, people are trying to overcome nature in one way or another. These covers are portraying this idea. The different items represent the people in each story. It appears as though the man-made items are overpowering the elements of nature because of their size, or are they? That is the question that the reader has to decide for each story."
-        prev="work6"
-        next="work2"
+        goal="The goal of this project was to learn about a company and execute a series of projects for that company. I picked Nike because I wanted to learn more about it and felt it would challenge me."
+        deliverables={["Annual Report bound book", "Corporate Social Responsibility(CSR) poster series", "Interactive version of the annual report"]}
+        outcome="I learned much about Nike and their style. In addition, I implemented an annual report, a CSR poster series, and an interactive version of the annual report."
+        impact="I learned to create designs within Nike's style guidelines while still braching out from what they normally do."
+        date="November 2019"
     >
         {/* <section className={styles.container}> */}
             {/* <Img className={styles.big} fluid={props.data.ar1.childImageSharp.fluid} />
             <Img className={styles.small} fluid={props.data.ar4.childImageSharp.fluid} />
             <Img className={styles.small} fluid={props.data.ar3.childImageSharp.fluid} />
-            <Img className={styles.small} fluid={props.data.arCover.childImageSharp.fluid} />
             <Img className={styles.big} fluid={props.data.ar2.childImageSharp.fluid} /> */}
         {/* </section> */}
 

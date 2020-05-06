@@ -5,7 +5,7 @@ import ProjectNav from '../project-nav/project-nav';
 
 const Work1 = props => (
     <div className={styles.work}>
-        <div className={styles.title}>
+        <div className={styles.description}>
             <h1>{props.title}</h1> 
             <p>{props.date}</p>
             <p><strong>Goal:</strong> {props.goal}</p>
