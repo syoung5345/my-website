@@ -5,14 +5,14 @@ import Img from 'gatsby-image';
 import Work from '../components/work/work';
 
 const info = {
-    title: "Nike Corporate Social Responsibility Poster Series",
-    date: "November 2019",
+    title: "PSA: Child Hunger",
+    date: "September 2017",
     type: "School project",
-    overview: "Corporate Social Responsibility or CSR is how companies show that they are doing good in the community.",
+    overview: "A Personal Service Announcement or PSA is intended to draw a viewer in instantly and then leave them with a sense of purpose of the next steps they could take to fight a problem in the world.",
     challenge: "How to design a CSR poster series to be different from what Nike has already done, but still in the realm of what they would actually do.",
     goal: "Design a CSR poster series that promotes a new fictional way that Nike is helping in the community.",
     solution: "Since Nike is geared toward athletes, I made the poster series to promote exercise in the community and show how Nike is helping other businesses that promote being active.",
-    deliverables: ["Poster Series"],
+    deliverables: ["PSA campaign"],
     prev: "",
     next: ""
 }

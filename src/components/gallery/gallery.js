@@ -39,18 +39,15 @@ const Gallery = (props) => (
                     <Link to="csr" className={styles.item}>
                         <Img fluid={props.img.csr.childImageSharp.fluid} alt="Corporate Social Responsibility Poster"/>
                     </Link>
-                    <Link to="nola" className={styles.item}>
-                        <Img fluid={props.img.nola.childImageSharp.fluid} alt="nola website"/>
+                    <Link to="cotopaxi" className={styles.item}>
+                        <Img fluid={props.img.cotopaxi.childImageSharp.fluid} alt="Cotopaxi website"/>
                     </Link>
                     <Link to="zion" className={styles.item}>
                         <Img fluid={props.img.zion.childImageSharp.fluid} alt="zion brochure"/>
                     </Link>
-                    <Link to="cotopaxi" className={styles.item}>
-                        <Img fluid={props.img.cotopaxi.childImageSharp.fluid} alt="Cotopaxi website"/>
+                    <Link to="nola" className={styles.item}>
+                        <Img fluid={props.img.nola.childImageSharp.fluid} alt="nola website"/>
                     </Link>
-                    {/* <Link to="bikesearcy" className={styles.item}>
-                        <Img fluid={props.img.benny.childImageSharp.fluid} alt="bike searcy"/>
-                    </Link> */}
                     <Link to="hungerpsa" className={styles.item}>
                         <Img fluid={props.img.uno.childImageSharp.fluid} alt="PSA child hunger"/>
                     </Link>
