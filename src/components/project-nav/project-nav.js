@@ -4,10 +4,10 @@ import { Link } from 'gatsby';
 import styles from './project-nav.module.css';
 
 const ProjectNav = props => (
-    <section>
-        <Link to={props.prev} className={styles.navItem}>&laquo; prev project</Link>
-        <Link to={props.next} className={`${styles.navItem} ${styles.next}`}>next project &raquo;</Link>
-    </section>
+    <nav>
+        <Link to={props.prev} className={styles.navItem}>&laquo; {props.prev}</Link>
+        <Link to={props.next} className={`${styles.navItem} ${styles.next}`}>{props.next} &raquo;</Link>
+    </nav>
 )
 
 export default ProjectNav;

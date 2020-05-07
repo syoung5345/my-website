@@ -58,28 +58,31 @@ fragment fluidImages on File {
 
 export const pageQuery1 = graphql `
 query {
-    bookCover: file(relativePath: { eq: "book-mockup-into-thin-air.png" }) {
-        ...fluidImages
-    }
-    nola: file(relativePath: { eq: "laptop-NOLA.png" }) {
-        ...fluidImages
-    }
-    zion: file(relativePath: { eq: "zion-front.jpg" }) {
-      ...fluidImages
-    }
-    mlb: file(relativePath: { eq: "home-hero.png" }) {
-      ...fluidImages
-    }
-    benny: file(relativePath: { eq: "Benny-ad-1.png" }) {
-      ...fluidImages
-    }
-    uno: file(relativePath: { eq: "uno-box-meals.png" }) {
+    skilltrax: file(relativePath: { eq: "skilltrax-1.png" }) {
       ...fluidImages
     }
     ar: file(relativePath: { eq: "ar-runner.png" }) {
       ...fluidImages
     }
-    skilltrax: file(relativePath: { eq: "skilltrax-1.png" }) {
+    cfi: file(relativePath: { eq: "cfi-home.png" }) {
+      ...fluidImages
+    }
+    bookCover: file(relativePath: { eq: "book-mockup-into-thin-air.png" }) {
+      ...fluidImages
+    }
+    cotopaxi: file(relativePath: { eq: "home-hero.png" }) {
+      ...fluidImages
+    }
+    csr: file(relativePath: { eq: "csr-1.png" }) {
+      ...fluidImages
+    }
+    nola: file(relativePath: { eq: "laptop-NOLA.png" }) {
+      ...fluidImages
+    }
+    zion: file(relativePath: { eq: "zion-front.jpg" }) {
+      ...fluidImages
+    }
+    uno: file(relativePath: { eq: "uno-box-meals.png" }) {
       ...fluidImages
     }
 }

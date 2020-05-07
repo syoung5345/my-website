@@ -12,6 +12,11 @@
   margin: 0 auto;
 }
 
+.next {
+  padding: 2em;
+  margin-top: 2em;
+}
+
 .wrapper {
     max-width: 940px;
     margin: 0 20px;

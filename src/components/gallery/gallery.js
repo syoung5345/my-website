@@ -8,7 +8,7 @@ import styles from './gallery.module.css';
 // import './card.css';
 
 //const imgTitles = ['Book Covers', 'Travel Website', 'Zion Brochure', 'Cotopaxi Website','Bike Searcy Branding', 'PSA Child Hunger'];
-const links = ['bookcovers', 'work2', 'work3', 'work4', 'work5', 'work6', 'annualreport', 'skilltrax'];
+const links = ['bookcovers', 'nola', 'zion', 'cotopaxi', 'hungerpsa', 'cfi', 'annualreport', 'skilltrax'];
 
 const Gallery = (props) => (
             <div>
@@ -27,28 +27,31 @@ const Gallery = (props) => (
                         </div>
                     </div> */}
 
-                    <Link to={links[7]} className={styles.item}>
+                    <Link to="skilltrax" className={styles.item}>
                         <Img fluid={props.img.skilltrax.childImageSharp.fluid} alt="SkillTrax website"/>
                     </Link>
-                    <Link to={links[6]} className={styles.item}>
+                    <Link to="annualreport" className={styles.item}>
                         <Img fluid={props.img.ar.childImageSharp.fluid} alt="annual report"/>
                     </Link>
-                    <Link to={links[0]} className={styles.item}>
+                    <Link to="bookcovers" className={styles.item}>
                         <Img fluid={props.img.bookCover.childImageSharp.fluid} alt="book covers"/>
                     </Link>
-                    <Link to={links[1]} className={styles.item}>
+                    <Link to="csr" className={styles.item}>
+                        <Img fluid={props.img.csr.childImageSharp.fluid} alt="Corporate Social Responsibility Poster"/>
+                    </Link>
+                    <Link to="nola" className={styles.item}>
                         <Img fluid={props.img.nola.childImageSharp.fluid} alt="nola website"/>
                     </Link>
-                    <Link to={links[2]} className={styles.item}>
+                    <Link to="zion" className={styles.item}>
                         <Img fluid={props.img.zion.childImageSharp.fluid} alt="zion brochure"/>
                     </Link>
-                    <Link to={links[3]} className={styles.item}>
-                        <Img fluid={props.img.mlb.childImageSharp.fluid} alt="mlb website"/>
+                    <Link to="cotopaxi" className={styles.item}>
+                        <Img fluid={props.img.cotopaxi.childImageSharp.fluid} alt="Cotopaxi website"/>
                     </Link>
-                    <Link to={links[4]} className={styles.item}>
+                    {/* <Link to="bikesearcy" className={styles.item}>
                         <Img fluid={props.img.benny.childImageSharp.fluid} alt="bike searcy"/>
-                    </Link>
-                    <Link to={links[5]} className={styles.item}>
+                    </Link> */}
+                    <Link to="hungerpsa" className={styles.item}>
                         <Img fluid={props.img.uno.childImageSharp.fluid} alt="PSA child hunger"/>
                     </Link>
                 </div>

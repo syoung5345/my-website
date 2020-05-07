@@ -2,20 +2,24 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-// import Work from '../components/work/work';
 import Work from '../components/work/work'
 import styles from './index.module.css';
 
+const info = {
+    title: "SkillTrax website",
+    date: "Feburary 2019",
+    type: "School project rebrand",
+    overview: "SkillTrax is an internal website for InfoWorks, a software consulting company, in Nashville, TN. I interned at InfoWorks in the summer of 2019. SkillTrax is an application to track the skills and certifications of employees within the company. It is used to help assign consultants to projects.",
+    challenge: "Learning how to use new technologies to develop the website and implement the design into it.",
+    goal: "Redesign the existing site and develop version 1 of the site.",
+    solution: "Lots of hard work and a summer of learning new things.",
+    deliverables: ["Website"],
+    prev: "",
+    next: ""
+}
+
 const Skilltrax = props => (
-    <Work
-        title="SkillTrax website"
-        goal="SkillTrax is an internal website for InfoWorks, a software consulting company, in Nashville, TN. This is the company that I interned for in the summer of 2019. SkillTrax is an application to track the skills and certifications of employees withing the company. Its intended use is for assigning consultants to projects. The goal was to redesign the existing site and implement features to improve the application further."
-        deliverables={["Web Application"]}
-        outcome="SkillTrax version 1 was completed. Through the process I learned how to implement an idea from the early stages to final version."
-        impact="SkillTrax is now live at InfoWorks and currently being used by all the employees."
-        date="June 2019 - August 2019"
-        url="skilltrax-1.png"
-    >
+    <Work info={info}>
         <section>
             <Img  fluid={props.data.skilltrax1.childImageSharp.fluid} />
             <Img  fluid={props.data.skilltrax2.childImageSharp.fluid} />

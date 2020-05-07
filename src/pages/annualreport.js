@@ -3,25 +3,23 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Work from '../components/work/work';
-import work1 from '../components/work/work1'
 import styles from './index.module.css';
 
-const AnnualReport = props => (
-    <Work 
-        title="Nike Annual Report and Poster Series"
-        goal="The goal of this project was to learn about a company and execute a series of projects for that company. I picked Nike because I wanted to learn more about it and felt it would challenge me."
-        deliverables={["Annual Report bound book", "Corporate Social Responsibility(CSR) poster series", "Interactive version of the annual report"]}
-        outcome="I learned much about Nike and their style. In addition, I implemented an annual report, a CSR poster series, and an interactive version of the annual report."
-        impact="I learned to create designs within Nike's style guidelines while still braching out from what they normally do."
-        date="November 2019"
-    >
-        {/* <section className={styles.container}> */}
-            {/* <Img className={styles.big} fluid={props.data.ar1.childImageSharp.fluid} />
-            <Img className={styles.small} fluid={props.data.ar4.childImageSharp.fluid} />
-            <Img className={styles.small} fluid={props.data.ar3.childImageSharp.fluid} />
-            <Img className={styles.big} fluid={props.data.ar2.childImageSharp.fluid} /> */}
-        {/* </section> */}
+const info = {
+    title: "Nike Annual Report",
+    date: "November 2019",
+    type: "School project rebrand",
+    overview: "For this project I chose Nike because it fit all the requirements and I was interesting in learning more about the brand.",
+    challenge: "How to redesign the annual report while staying within the Nike styleguide? It needs to look like Nike, but also push the limits of what they normally do.",
+    goal: "Redesign Nike's annual report",
+    solution: "I embraced Nike's bold and athletic style by employing strong contrast with black and white as well as using big, captivating images. These things empasize Nike's style and push it farther by conveying a dynamic and active mood.",
+    deliverables: ["Annual Report bound book"],
+    prev: "",
+    next: ""
+}
 
+const AnnualReport = props => (
+    <Work info={info}>
         <section>
             <Img  fluid={props.data.arCover.childImageSharp.fluid} />
             <Img  fluid={props.data.ar1.childImageSharp.fluid} />
@@ -29,26 +27,6 @@ const AnnualReport = props => (
             <Img  fluid={props.data.ar3.childImageSharp.fluid} />
             <Img  fluid={props.data.ar4.childImageSharp.fluid} />
             <Img  fluid={props.data.ar5.childImageSharp.fluid} />
-        </section>
-        <section>
-            <div className={styles.description}>
-                <h1>Coporate Social Responsibility poster series</h1>
-                <p>First concepts and designs</p>
-            </div>
-            <div className={styles.img}>
-                <Img  fluid={props.data.csr1.childImageSharp.fluid} />
-                <Img  fluid={props.data.csr2.childImageSharp.fluid} />
-                <Img  fluid={props.data.csr3.childImageSharp.fluid} />
-                <Img  fluid={props.data.csr4.childImageSharp.fluid} />
-                <Img  fluid={props.data.csr5.childImageSharp.fluid} />
-            </div>
-
-            <div className={styles.description} style={{ 'marginTop': '3em'}}>
-                <h1>Final poster series</h1>
-            </div>
-            <Img  fluid={props.data.csrPoster1.childImageSharp.fluid} />
-            <Img  fluid={props.data.csrPoster2.childImageSharp.fluid} />
-            <Img  fluid={props.data.csrPoster3.childImageSharp.fluid} />
         </section>
     </Work>
 )
